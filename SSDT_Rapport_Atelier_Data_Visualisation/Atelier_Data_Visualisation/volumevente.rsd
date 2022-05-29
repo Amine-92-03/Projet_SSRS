@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>SOURCE_COMPTE_SA</DataSourceReference>
+      <CommandText>SELECT COUNT(OrderDate) Volume_de_vente, YEAR(OrderDate) AS Annee
+FROM Sales.SalesOrderHeader
+WHERE YEAR(OrderDate) &gt; 2011
+GROUP BY YEAR(OrderDate)
+ORDER BY Annee ASC</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Volume_de_vente">
+        <DataField>Volume_de_vente</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Annee">
+        <DataField>Annee</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

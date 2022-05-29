@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Atelier_Data_Visualisation", "Atelier_Data_Visualisation\Atelier_Data_Visualisation.rptproj", "{6B1EDBD2-5F2A-484A-8221-07897F360262}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B1EDBD2-5F2A-484A-8221-07897F360262}.Debug|Default.ActiveCfg = Debug
+		{6B1EDBD2-5F2A-484A-8221-07897F360262}.Debug|Default.Build.0 = Debug
+		{6B1EDBD2-5F2A-484A-8221-07897F360262}.Debug|Default.Deploy.0 = Debug
+		{6B1EDBD2-5F2A-484A-8221-07897F360262}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{6B1EDBD2-5F2A-484A-8221-07897F360262}.DebugLocal|Default.Build.0 = DebugLocal
+		{6B1EDBD2-5F2A-484A-8221-07897F360262}.Release|Default.ActiveCfg = Release
+		{6B1EDBD2-5F2A-484A-8221-07897F360262}.Release|Default.Build.0 = Release
+		{6B1EDBD2-5F2A-484A-8221-07897F360262}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

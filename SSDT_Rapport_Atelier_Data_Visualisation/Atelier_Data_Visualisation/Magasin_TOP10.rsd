@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>SOURCE_COMPTE_SA</DataSourceReference>
+      <CommandText>SELECT COUNT(OrderDate) nbreOrderdate, YEAR(OrderDate) AS OrderYear, store.Name AS StoreName, SUM(TotalDue) CA
+FROM Sales.SalesOrderHeader
+JOIN Sales.Customer cust ON Sales.SalesOrderHeader.CustomerID = cust.CustomerID
+JOIN Sales.Store store ON cust.StoreID = store.BusinessEntityID
+WHERE YEAR(OrderDate) &gt; 2011
+AND store.Name in ('Third Bike Store', 'Red Bicycle Company', 'Racing Toys', 'Rapid Bikes')
+GROUP BY YEAR(OrderDate), store.Name
+ORDER BY OrderYear ASC</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="nbreOrderdate">
+        <DataField>nbreOrderdate</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="OrderYear">
+        <DataField>OrderYear</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="StoreName">
+        <DataField>StoreName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CA">
+        <DataField>CA</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

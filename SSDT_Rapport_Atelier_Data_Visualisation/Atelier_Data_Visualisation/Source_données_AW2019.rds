@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Source_données_AW2019">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=DESKTOP-O6GRLC6;Initial Catalog=AdventureWorks2019</ConnectString>
+    <Prompt>Spécifiez un nom d'utilisateur et un mot de passe pour la source de données Source_données_AW2019 :</Prompt>
+  </ConnectionProperties>
+  <DataSourceID>60002942-5e4c-4fad-9b77-cbc282f6cba9</DataSourceID>
+</RptDataSource>
